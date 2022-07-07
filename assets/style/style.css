@@ -29,6 +29,7 @@ div img{
     max-width: 992px;
     margin: auto;
     width: 100%;
+    min-width: 320px;
 }
 
 header{
@@ -260,3 +261,46 @@ footer div{
     color: white;
 }
 
+@media(max-width: 992px){
+    .flex-container{
+        flex-direction: column;
+    }
+
+    .presentation{
+        flex-direction: column-reverse;
+    }
+
+    .presentation .presentation-text{
+        width: 100%;
+    }
+
+    .who-we-are{
+        flex-direction: column-reverse;
+    }
+
+    .who-we-are img{
+        min-width: 320px;
+        margin: auto;
+    }
+
+    .services-list{
+        flex-direction: column;
+    }
+
+    .service-item{
+        width: 50%;
+        margin: auto;
+    }
+
+    .plan-list{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .plan-list .plan-item{
+        max-width: 90%;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
